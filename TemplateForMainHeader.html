@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--        style="background-color:#eee">-->
+    <div style="font-family: Lucida Grande; font-size: 20px;">
+        {{#HASSUBJECT}}
+        {{EXTRACTEDSUBJECT}}
+        {{/HASSUBJECT}}
+        {{#NOSUBJECT}}
+        <i>无主题</i>
+        {{/NOSUBJECT}}
+    </div>
+    <br>
+    <div style="color:DarkGray">
+        {{#HASFROM}}
+        <div>
+            <b>发件人:</b> {{FROM}}
+        </div>
+        {{/HASFROM}}
+        {{#HASTO}}
+        <div>
+            <b>收件人:</b> {{TO}}
+        </div>
+        {{/HASTO}}
+        {{#HASCC}}
+        <div>
+            <b>抄送:</b> {{CC}}
+        </div>
+        {{/HASCC}}
+        {{#HASBCC}}
+        <div>
+            <b>密送:</b> {{BCC}}
+        </div>
+        {{/HASBCC}}
+        {{#NORECIPIENT}}
+        <div>
+            <b>发件人:</b>
+            <i>Undisclosed recipient</i>
+        </div>
+        {{/NORECIPIENT}}
+        <div>
+            <b>时间:</b> {{LONGDATE}}
+        </div>
+    </div>
+
+</html>

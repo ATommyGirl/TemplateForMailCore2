@@ -1,0 +1,13 @@
+<div id="mocha-mc-attach">
+    <img id="{{FILENAME}}" width="80" height="80" src="http://wechat.mochasoft.com.cn:8000/webroot/moa_platform/img/download.png" onclick="downloadAttach('{{FILENAME}}')"/>
+    {{#HASSIZE}}
+    <div>
+        - {{FILENAME}}/ {{SIZE}}
+    </div>
+    {{/HASSIZE}}
+    {{#NOSIZE}}
+    <div>
+        - {{FILENAME}}
+    </div>
+    {{/NOSIZE}}
+</div>
